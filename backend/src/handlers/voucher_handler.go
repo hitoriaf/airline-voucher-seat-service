@@ -92,7 +92,7 @@ func (h *VoucherHandler) GenerateVoucher(c *gin.Context) {
 		})
 		return
 	}
-	//Generate seats
+	//Generate Random Seats
 	seats = libs.NewLibs().GenerateSeats(req.AircraftType)
 	voucher := &database.Voucher{
 		CrewName:     req.CrewName,
