@@ -34,7 +34,15 @@ git clone <repository-url> <projectName>
 cd <projectName>
 ```
 
-2. Start all services:
+2. Create Environment File
+```bash
+cd backend
+cp .env.example .env
+cd ..
+```
+
+3. Start all services:
+Ensure you are at the root directory.
 ```bash
 docker-compose up --build
 ```
