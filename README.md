@@ -96,7 +96,13 @@ cd frontend
 npm install
 ```
 
-3. Run development server:
+3. Create environment file:
+```bash
+cp .env.example .env
+# Edit .env file with your configuration
+```
+
+4. Run development server:
 ```bash
 npm run dev
 ```

@@ -14,6 +14,29 @@ This service uses RESTful API communication, built with Go programming language 
 - **Database**: SQLite
 - **Architecture**: RESTful API
 
+## Installation
+
+1. Navigate to backend directory:
+```bash
+cd backend
+```
+
+2. Install dependencies:
+```bash
+go mod download
+```
+
+3. Create environment file:
+```bash
+cp .env.example .env
+# Edit .env file with your configuration
+```
+
+4. Run the backend server:
+```bash
+go run src/main.go
+```
+
 
 ## API Endpoints
 
