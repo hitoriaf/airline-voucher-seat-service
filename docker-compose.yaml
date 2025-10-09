@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    image: airline-voucher-seat-service
+    container_name: airline-voucher-seat-service
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/src/db:/app/src/db
+
+  frontend:
+    build:
+      context: ./frontend
+    image: airline-voucher-seat-service-frontend
+    container_name: airline-voucher-seat-service-frontend
+    ports:
+      - "80:80"
