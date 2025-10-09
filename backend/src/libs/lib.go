@@ -40,7 +40,6 @@ func (l *Libs) GenerateSeats(aircraftType string) []string {
 }
 
 func (l *Libs) ValidateDate(date string) (bool, error) {
-	// Validate date format (YYYY-MM-DD) using time.Parse
 	_, err := time.Parse("2006-01-02", date)
 	if err != nil {
 		return false, fmt.Errorf("date must be in YYYY-MM-DD format")
